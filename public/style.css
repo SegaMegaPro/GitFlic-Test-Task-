@@ -1,0 +1,462 @@
+*
+{
+    margin:0;
+    padding:0;
+    font-family: "Microsoft Sans Serif", serif;
+    font-weight: 400;
+}
+*
+{
+    transition: all 0.15s ease-out;
+}
+html
+{
+    background-color: #F9F8F9;
+}
+::-webkit-scrollbar
+{
+    width: 0;
+    height: 0;
+}
+
+body
+{
+    display: flex;
+}
+a
+{
+    user-select: none;
+}
+/*СВЕТЛАЯ ТЕМА*/
+.MobileButton
+{
+    position:absolute;
+    visibility: hidden;
+}
+.MobileButtonUndo
+{
+    position: absolute;
+    visibility: hidden;
+}
+.NavigationWrapper
+{
+    background-color: #FFFFFF;
+    height: 100vh;
+    width:14.2vw;
+}
+
+.LogoWrapper
+{
+    position: relative;
+    margin-left: 40%;
+    width: 2.84vw;
+    top:5%;
+    height: 2.84vw;
+    padding: 0.7vh;
+    text-align: center;
+    box-sizing: border-box;
+}
+.Logo
+{
+    fill:#004EFF;
+    position: absolute;
+    margin: -1.5vh -1.7vw;
+    width: 3.5vw;
+    height: 3.5vw;
+    transition: all 700ms ease-out;
+}
+
+.NavigationTabsWrapper
+{
+    position: relative;
+    top:10%;
+    bottom: 80%;
+    height:50%;
+    width: 100%;
+}
+.NavigationTab
+{
+    text-decoration: none;
+    color:black;
+    border-radius: 0.5vw;
+    font-size: 2.5vh;
+    display: flex;
+    position: relative;
+    left:7.5%;
+    right: 7.5%;
+    height: 12%;
+    width: 85%;
+    padding:5% 0 5% 5%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+.NavigationTabLogo
+{
+    fill:black;
+    width: 1vw;
+    height: 1vw;
+    margin-top: 1.3%;
+    margin-right: 10%;
+}
+.NavigationTab:hover
+{
+    animation: NavTabHover 450ms ease-in-out forwards;
+}
+@keyframes NavTabHover
+{
+    to
+    {
+        color:white;
+        background-color: #004EFF;
+    }
+}
+@keyframes NavTabSVG {
+    to {
+        fill: white;
+    }
+}
+.SVGAnimation
+{
+    animation: NavTabSVG 700ms ease-in-out forwards;
+}
+
+.ModeWrapper
+{
+    background-color: #F9F8F9;
+    color:black;
+    border-radius: 0.5vw;
+    font-size: 2.5vh;
+    display: flex;
+    position: relative;
+    top:35%;
+    left:7.5%;
+    right: 7.5%;
+    height: 6%;
+    width: 85%;
+    padding:7% 3% 5% 3%;
+    margin-bottom: 5%;
+    box-sizing: border-box;
+}
+.Mode
+{
+    text-decoration: none;
+    color:black;
+    border-radius: 7%;
+    position: relative;
+    bottom: 25%;
+    top:-25%;
+    left:0;
+    right: 99%;
+    padding:2% 0 2% 5%;
+    width: 40%;
+    height: 100%;
+    user-select: none;
+}
+#ModeSwapper
+{
+    position: absolute;
+    background-color: #FFFFFF;
+    border-radius: 0.5vw;
+    left:8%;
+    height: 65%;
+    width: 45%;
+    bottom:15%;
+}
+.ModeLogo
+{
+    position: relative;
+    top: 8%;
+    width: 1vw;
+    height: 1vw;
+    fill:black;
+}
+.LightMode
+{
+    color:#004EFF;
+    padding: 3% 4% 2% 4%;
+    width: 50%;
+}
+.LightModeLogo
+{
+    fill:#004EFF;
+}
+.DarkMode
+{
+    width: 50%;
+    padding: 3% 1% 2% 5%;
+}
+.ContentBox
+{
+    display: flex;
+    background-color: #F9F8F9;
+    width: 100%;
+    margin-left: 2.5%;
+    padding-top: 2%;
+}
+.PageTitle
+{
+    font-size: 2vw;
+    font-weight: 700;
+    width: 20%;
+    height: 5%;
+}
+.SearchBar
+{
+    border:0.1vw solid #DDE2E8;
+    position: relative;
+    left:2%;
+    border-radius: 1.5vw;
+    font-size: 0.91vw;
+    background-color: #FFFFFF;
+    width: 25%;
+    height: 5.2%;
+    font-style: italic;
+    padding-top: 0.6% ;
+    padding-left: 1%;
+    box-sizing: border-box;
+    transition: all 100ms ease-out;
+}
+.SearchBarLogo
+{
+    position: relative;
+    bottom:66.5%;
+    left:89.5%;
+    width: 1.2vw;
+    height: 1.2vw;
+    fill:black;
+}
+.SearchBarText,.SearchBarText:focus,.SearchBarText::placeholder
+{
+    outline: none;
+    border: none;
+    width: 85%;
+    font-size: 1vw;
+    list-style-type: circle;
+    transition: all 700ms ease-out;
+}
+.OptionalMenu
+{
+    border:0.1vw solid #DDE2E8;
+    border-radius: 0.5vw;
+    position: absolute;
+    font-size: 2vw;
+    font-weight: 700;
+    width: 82.5%;
+    top:13%;
+    height: 13%;
+    padding: 1.75% 2% 1.75% 2%;
+    box-sizing: border-box;
+}
+.OptionalMenuButton
+{
+    position: relative;
+    background-color: #004EFF;
+    color:white;
+    border:none;
+    border-radius: 0.5vw;
+    font-weight: 500;
+    font-size: 1vw;
+    height: 100%;
+    width: 13%;
+    bottom:11.5%;
+    left:71%;
+    margin-bottom: 5%;
+}
+.TableWrapper
+{
+    border:0.1vw solid #DDE2E8;
+    border-radius: 0.7vw;
+    background-color: #FFFFFF;
+    position: absolute;
+    top:30%;
+    height: 65%;
+    width: 82.5%;
+    overflow: scroll;
+    box-sizing: border-box;
+    box-shadow: 0 0 0.1vw rgba(0, 0, 0, 0.15);
+}
+.UsersTable
+{
+    border-collapse: collapse;
+    position: relative;
+    font-size: 1vw;
+    font-weight: 700;
+    text-align: start;
+    width: 100%;
+    height: 200%;
+    overflow: scroll;
+}
+.UsersTable .TableHeaders th
+{
+    position: sticky;
+    top:0;
+    z-index: 2;
+    padding: 2% 1%;
+    background-color: #F9F8F9;
+    height: 1%;
+    width: 20%;
+    text-align: start;
+}
+.UsersTable .TableData td
+{
+    height: 5%;
+    padding: 0.5% 1%;
+    box-sizing: border-box;
+}
+.UsersTable .TableData .Names
+{
+    box-sizing: border-box;
+}
+.UsersTable .Names data
+{
+    display: flex;
+    position: relative;
+    width: 80%;
+    left:20%;
+    bottom: 0.9vw;
+}
+.UsersTable img
+{
+    position: relative;
+    margin-right: 0.5vw;
+    top:0.8vw;
+    width: 1.75vw;
+    height: 1.75vw;
+}
+
+/*ТЕМНАЯ ТЕМА*/
+.NavigationWrapperDark
+{
+    background-color: #000000;
+}
+.NavigationTabDark
+{
+    color:white
+}
+.NavigationTabLogoDark
+{
+    fill:white;
+}
+.ModeWrapperDark
+{
+    background-color: #2C2C2C;
+}
+@keyframes ModeSwapToDarkness {
+    from
+    {
+        background-color: #FFFFFF;
+        transform: none;
+    }
+    to
+    {
+        background-color: #181618;
+        transform: translate(4.6vw,0);
+    }
+}
+@keyframes ModeSwapToLight
+{
+    from
+    {
+        background-color: #181618;
+        transform: translate(4.6vw,0);
+    }
+    to
+    {
+        background-color: white;
+        transform: translate(0,0);
+    }
+}
+.ModeSwapIntoTheDarkness
+{
+    animation: ModeSwapToDarkness 200ms ease-in-out forwards;
+
+}
+.ModeSwapIntoTheLight
+{
+    animation: ModeSwapToLight 200ms ease-in-out forwards;
+}
+@keyframes DarkModeActive
+{
+    from
+    {
+        fill:#004EFF
+    }
+    to
+    {
+        fill:white;
+    }
+}
+@keyframes LightModeActive
+{
+    from
+    {
+        fill:black;
+    }
+    to
+    {
+        fill:#3C78FF;
+    }
+}
+.DarkModeActive
+{
+    color:white;
+    animation: DarkModeActive 100ms ease-in-out forwards;
+}
+.LightModeActive
+{
+    color:#3C78FF;
+    animation: LightModeActive 100ms ease-in-out forwards;
+}
+.PageTitleDark
+{
+    color:white;
+}
+.MAINDark
+{
+    background-color: #1E1E1E;
+}
+.SearchBarDark
+{
+    border: 0.1vw solid #2C2C2C;
+    background-color: #2C2C2C;
+    color:white;
+    transition: all 500ms ease-out;
+}
+.SearchBarLogoDark
+{
+    fill:white;
+}
+.SearchBarTextDark,.SearchBarTextDark:focus,.SearchBarTextDark::placeholder
+{
+    color:white;
+    background-color: inherit;
+    transition: all 50ms ease-out;
+}
+.OptionalMenuDark
+{
+    border: 0.1vw solid #2C2C2C;
+    color: white;
+    background-color: #2C2C2C;
+}
+.OptionalMenuButtonDark
+{
+    background-color: #3C78FF;
+}
+.UsersTable .TableHeadersDark th
+{
+    background-color: black;
+    color:white;
+}
+.UsersTable .TableDataDark td
+{
+    background-color: #2C2C2C;
+    color: white;
+}
+.TableWrapperDark
+{
+    border:0.1vw solid #2C2C2C;
+}
+.LogoDark
+{
+    fill:white;
+}
